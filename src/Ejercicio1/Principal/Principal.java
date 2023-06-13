@@ -6,7 +6,7 @@ luego informar mediante otro método el número de ISBN, el título, el autor de
 numero de páginas.
 */
 
-package Ejercicio1.Biblioteca;
+package Ejercicio1.Principal;
 
 import Ejercicio1.Entidades.Libro;
 import Ejercicio1.Servicios.LibroServicio;

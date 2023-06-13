@@ -9,7 +9,7 @@ d) Método area(): para calcular el área de la circunferencia (Area = π ∗ ra
 e) Método perimetro(): para calcular el perímetro (Perimetro = 2 ∗ π ∗ radio).
 */
 
-package Ejercicio2.Geometria;
+package Ejercicio2.Principal;
 
 import Ejercicio2.Entidades.Circunferencia;
 import Ejercicio2.Servicios.CircunferenciaServicios;
