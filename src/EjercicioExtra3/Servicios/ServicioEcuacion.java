@@ -36,8 +36,9 @@ public class ServicioEcuacion {
                 _raices[1] = ( - _ecuacion.getB() - Math.sqrt(calcDiscriminante(_ecuacion))) / (2 * _ecuacion.getA());
                 break;
             case 3:
-                _raices[0] = (Math.sqrt(Math.abs(calcDiscriminante(_ecuacion)))) / (2 * _ecuacion.getA());
-                _raices[1] = (-Math.sqrt(Math.abs(calcDiscriminante(_ecuacion)))) / (2 * _ecuacion.getA());
+                _raices[0] = (- _ecuacion.getB() / (2 * _ecuacion.getA()));
+                _raices[1] = (Math.sqrt(Math.abs(calcDiscriminante(_ecuacion)))) / (2 * _ecuacion.getA());
+                _raices[2] = (-Math.sqrt(Math.abs(calcDiscriminante(_ecuacion)))) / (2 * _ecuacion.getA());
                 break;
             default:
                 break;
@@ -59,8 +60,8 @@ public class ServicioEcuacion {
                     System.out.println("La raiz Nro " + (i+1) + " es: " + raices[i]);
                     break;
                 case 3:
-                    if (i != 2) {
-                        System.out.println("La raiz imaginaria Nro " + (i+1) + " es: " + (- _ecuacion.getB() / (2 * _ecuacion.getA())) + " + (" + raices[i] + ")i");
+                    if (i != 0) {
+                        System.out.println("La raiz imaginaria Nro " + (i) + " es: " + raices[0] + " + (" + raices[i] + ")i");
                     }
                     break;
             }
