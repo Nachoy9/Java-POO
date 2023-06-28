@@ -78,18 +78,18 @@ public class AhorcadoServicio {
 
     public int[] encontradas(Ahorcado _ahorcado) {
 
-        int[] _retorno = new int[2];
+        int[] _encontrada = new int[2];
 
         for (int i = 0; i < _ahorcado.getAciertos().length; i++) {
 
             if (_ahorcado.getAciertos()[i]) {
-                _retorno[0]++;
+                _encontrada[0]++;
             } else {
-                _retorno[1]++;
+                _encontrada[1]++;
             }
         }
 
-        return _retorno;
+        return _encontrada;
     }
 
     public int intentos(Ahorcado _ahorcado, boolean acerto) {
